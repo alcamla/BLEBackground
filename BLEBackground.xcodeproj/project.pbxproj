@@ -15,6 +15,7 @@
 		6C9F0C871CBE6E7A00076D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9F0C851CBE6E7A00076D78 /* LaunchScreen.storyboard */; };
 		6C9F0C921CBE6E7A00076D78 /* BLEBackgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9F0C911CBE6E7A00076D78 /* BLEBackgroundTests.swift */; };
 		6C9F0C9D1CBE6E7A00076D78 /* BLEBackgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9F0C9C1CBE6E7A00076D78 /* BLEBackgroundUITests.swift */; };
+		6CEC2D4E1CBE77270019C977 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEC2D4D1CBE77270019C977 /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6C9F0C981CBE6E7A00076D78 /* BLEBackgroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEBackgroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9F0C9C1CBE6E7A00076D78 /* BLEBackgroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEBackgroundUITests.swift; sourceTree = "<group>"; };
 		6C9F0C9E1CBE6E7A00076D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CEC2D4D1CBE77270019C977 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				6C9F0C791CBE6E7A00076D78 /* AppDelegate.swift */,
 				6C9F0C7B1CBE6E7A00076D78 /* ViewController.swift */,
+				6CEC2D4D1CBE77270019C977 /* BluetoothManager.swift */,
 				6C9F0C7D1CBE6E7A00076D78 /* Main.storyboard */,
 				6C9F0C831CBE6E7A00076D78 /* Assets.xcassets */,
 				6C9F0C851CBE6E7A00076D78 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				6C9F0C7C1CBE6E7A00076D78 /* ViewController.swift in Sources */,
 				6C9F0C821CBE6E7A00076D78 /* BLEBackground.xcdatamodeld in Sources */,
+				6CEC2D4E1CBE77270019C977 /* BluetoothManager.swift in Sources */,
 				6C9F0C7A1CBE6E7A00076D78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +492,7 @@
 				6C9F0CA31CBE6E7A00076D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C9F0CA41CBE6E7A00076D78 /* Build configuration list for PBXNativeTarget "BLEBackgroundTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				6C9F0CA61CBE6E7A00076D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C9F0CA71CBE6E7A00076D78 /* Build configuration list for PBXNativeTarget "BLEBackgroundUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				6C9F0CA91CBE6E7A00076D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
