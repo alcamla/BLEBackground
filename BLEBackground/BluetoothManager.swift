@@ -143,8 +143,8 @@ extension BluetoothManager:CBCentralManagerDelegate{
         //TODO:Verify if a more rigurous selection of the device is requiered. What if several devices have the same services?
         // It is important to have a reference to the peripheral that will be connected. Otherwise, the connection does not succeed (seems to be a bug?)
         self.connectedPeripheral = peripheral
-        centralManager.connectPeripheral(peripheral, options: nil);
-        
+        //centralManager.connectPeripheral(peripheral, options: nil);
+        centralManager.connectPeripheral(peripheral, options: [CBConnectPeripheralOptionNotifyOnNotificationKey:true])
     }
     
     func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
@@ -205,6 +205,13 @@ extension BluetoothManager:CBPeripheralDelegate{
                 print("Will get notifications in changes of characteristic", characteristicName, "of service", serviceDescriptor?.name, separator: " ", terminator: "\n")
             }
         }
+    }
+    
+    func peripheral(peripheral: CBPeripheral, didUpdateValueForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
+        let service = characteristic.service
+        let serviceDescriptor = self.serviceDescriptorForService(service)
+        let characteristicName = serviceDescriptor?.characteristicNameForCharacteristicUUID(characteristic.UUID);
+        print("Did receive update notification for characterisitic with name: \(characteristicName)")
     }
 }
 
