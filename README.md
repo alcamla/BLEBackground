@@ -1,2 +1,2 @@
 # BLEBackground
-Explores  CoreBluetooth functionalities for iOS that allow  apps to run bluetooth related task while running on the background
+Explores the CoreBluetooth functionalities for iOS apps allowing them to perform bluetooth related tasks while on the background
